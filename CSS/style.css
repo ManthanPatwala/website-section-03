@@ -3,3 +3,126 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.section-hero {
+  /* background-color: rgb(88, 252, 255); */
+}
+
+.container {
+  max-width: 120rem;
+  margin: 9.5rem auto;
+  /* background-color: red; */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2.5rem;
+  gap: 2rem;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-hero {
+  width: 80%;
+}
+
+.hero-head-text {
+  font-family: "Spicy Rice";
+  font-size: 3.4rem;
+  line-height: 1.2;
+  letter-spacing: 3.5px;
+  color: #006a8d;
+}
+
+.highlight {
+  background-color: #e89d0c;
+  padding: 1rem;
+  border-radius: 50px;
+  color: white;
+}
+
+.hero-subhead {
+  font-family: "IBM Plex Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "IBM Plex Sans";
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #006a8d;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  align-self: center;
+}
+
+@media (max-width: 62.5em) {
+  html {
+    font-size: 56.2%;
+  }
+  .grid-2-col {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 53.12em) {
+  html {
+    font-size: 56.2%;
+  }
+
+  .img-box {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .grid-2-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .highlight {
+    background-color: white;
+    color: #e89d0c;
+  }
+  .hero-head-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .img-box {
+    width: 80%;
+    justify-self: center;
+  }
+}
